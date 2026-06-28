@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Maximiliano Blanes — Abogado penalista matriculado en Córdoba, Argentina. Defensa penal, querella, delitos económicos y más.">
+  <meta name="robots" content="index, follow">
+  <title>Dr. Maximiliano Blanes · Abogado Penalista · Córdoba</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Maximiliano Blanes · Abogado Penalista · Córdoba">
+  <meta property="og:description" content="Abogado penalista matriculado en Córdoba, Argentina. Consulta confidencial.">
+  <meta property="og:locale" content="es_AR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Ir al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+       ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Volver al inicio">
+        Dr. Maximiliano Blanes
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#areas"    class="nav-link">Áreas</a>
+        <a href="#por-que"  class="nav-link">Por qué</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <a
+        href="https://wa.me/5493512680342?text=Hola%20Dr.%20Blanes%2C%20quisiera%20hacer%20una%20consulta"
+        class="btn btn-ghost nav-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Consulta confidencial por WhatsApp"
+      >
+        Consulta confidencial
+      </a>
+
+      <!-- Menú hamburguesa para mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-drawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Drawer mobile -->
+    <div class="nav-drawer" id="nav-drawer" hidden>
+      <a href="#areas"    class="nav-drawer-link" data-close>Áreas</a>
+      <a href="#por-que"  class="nav-drawer-link" data-close>Por qué elegir al Dr. Blanes</a>
+      <a href="#contacto" class="nav-drawer-link" data-close>Contacto</a>
+      <a
+        href="https://wa.me/5493512680342?text=Hola%20Dr.%20Blanes%2C%20quisiera%20hacer%20una%20consulta"
+        class="btn btn-primary nav-drawer-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Consulta confidencial
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="hero" class="hero" aria-label="Presentación">
+      <!--
+        IMAGEN DE FONDO:
+        Agregar ./images/hero-bg.webp (WebP preferido) o hero-bg.jpg.
+        Luego descomentar en style.css, bloque .hero, las líneas de background-image.
+      -->
+      <div class="hero-content container">
+        <p class="hero-eyebrow">Abogado penalista &middot; C&oacute;rdoba, Argentina</p>
+
+        <h1 class="hero-headline">
+          La defensa que<br>el momento exige
+        </h1>
+
+        <p class="hero-sub">
+          Atenci&oacute;n personal y directa en cada caso. Estrategia clara y representaci&oacute;n
+          comprometida en todas las etapas del proceso penal.
+        </p>
+
+        <a
+          href="https://wa.me/5493512680342?text=Hola%20Dr.%20Blanes%2C%20quisiera%20hacer%20una%20consulta"
+          class="btn btn-primary btn-large"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Iniciar consulta confidencial por WhatsApp"
+        >
+          Consulta confidencial &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EL DOCTOR — foto + bio
+         ============================================================ -->
+    <section id="doctor" class="section" aria-labelledby="doctor-title">
+      <div class="container">
+        <div class="doctor-layout">
+
+          <!-- Columna izquierda: foto -->
+          <div class="doctor-photo-col">
+            <figure class="doctor-photo" id="doctor-figure">
+              <!--
+                FOTO DEL DR. BLANES:
+                Agregar ./images/doctor.webp (o doctor.jpg).
+                Tamaño ideal: 700 × 900 px mínimo, orientación vertical.
+                El <img> muestra un placeholder estilizado hasta que agregues la foto.
+              -->
+              <img
+                src="./images/doctor.webp"
+                alt="Dr. Maximiliano Blanes — Abogado penalista, Córdoba"
+                width="560"
+                height="720"
+                loading="eager"
+                id="doctor-img"
+              >
+              <!-- Placeholder visual — se oculta cuando carga la imagen real -->
+              <div class="doctor-placeholder" id="doctor-placeholder" aria-hidden="true">
+                <svg class="doctor-placeholder-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                  <rect x="4" y="4" width="32" height="32" rx="2"/>
+                  <circle cx="20" cy="16" r="6"/>
+                  <path d="M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+                </svg>
+                <span>Foto del Dr. Blanes<br><em>agregar ./images/doctor.webp</em></span>
+              </div>
+            </figure>
+            <p class="doctor-photo-note">
+              <!-- PLACEHOLDER: texto auxiliar bajo la foto, opcional -->
+              [Frase breve bajo la foto — qué guía al Dr. Blanes — cómo ejerce]
+            </p>
+          </div>
+
+          <!-- Columna derecha: bio -->
+          <div class="doctor-bio">
+            <p class="bio-label">El doctor</p>
+            <h2 id="doctor-title" class="bio-name">Dr. Maximiliano Blanes</h2>
+
+            <p class="bio-text">
+              <!-- PLACEHOLDER: reseña profesional -->
+              [Reseña profesional — a completar por el cliente. Quién es, su enfoque de la defensa, su forma de trabajo.]
+            </p>
+
+            <div class="bio-creds">
+              <div class="bio-cred">
+                <span class="cred-label">Matr&iacute;cula</span>
+                <span class="cred-value">MP.1-45107</span>
+              </div>
+              <div class="bio-cred">
+                <span class="cred-label">Formaci&oacute;n</span>
+                <span class="cred-value">UNC</span>
+              </div>
+              <div class="bio-cred">
+                <span class="cred-label">Trayectoria</span>
+                <!-- PLACEHOLDER: reemplazar [N] con los años reales -->
+                <span class="cred-value">[N] a&ntilde;os</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ÁREAS DE PRÁCTICA PENAL
+         ============================================================ -->
+    <section id="areas" class="section section-alt" aria-labelledby="areas-title">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 id="areas-title" class="section-title">Cada materia,<br>su defensa</h2>
+          <p class="section-subtitle">
+            Asesoramiento y representación en todas las etapas del proceso penal —
+            tanto en la defensa como en el rol de querellante.
+          </p>
+        </header>
+
+        <div class="areas-grid">
+
+          <article class="area-card">
+            <h3 class="area-name">Querella</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Defensa penal</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Delitos económicos</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Delitos electrónicos e informáticos</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Violencia de género</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Delitos contra la propiedad</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Narcotráfico</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Delitos culposos y accidentes de tránsito</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+          <article class="area-card">
+            <h3 class="area-name">Ejecución de la pena</h3>
+            <p class="area-desc">[Descripción breve — a completar por el cliente]</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         POR QUÉ ELEGIR AL DR. BLANES
+         ============================================================ -->
+    <section id="por-que" class="section" aria-labelledby="porque-title">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 id="porque-title" class="section-title">Por qué elegir al Dr.&nbsp;Blanes</h2>
+          <!-- PLACEHOLDER: subtítulo introductorio -->
+          <p class="section-subtitle">[Subtítulo introductorio — a completar por el cliente]</p>
+        </header>
+
+        <div class="reasons-grid">
+
+          <div class="reason-item">
+            <!-- PLACEHOLDER: todos a completar por el cliente -->
+            <h3 class="reason-title">[Diferenciador 1 — a completar]</h3>
+            <p class="reason-desc">[Descripción de qué lo distingue y qué garantiza al cliente]</p>
+          </div>
+
+          <div class="reason-item">
+            <h3 class="reason-title">[Diferenciador 2 — a completar]</h3>
+            <p class="reason-desc">[Descripción — a completar]</p>
+          </div>
+
+          <div class="reason-item">
+            <h3 class="reason-title">[Diferenciador 3 — a completar]</h3>
+            <p class="reason-desc">[Descripción — a completar]</p>
+          </div>
+
+          <div class="reason-item">
+            <h3 class="reason-title">[Diferenciador 4 — a completar]</h3>
+            <p class="reason-desc">[Descripción — a completar]</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RESEÑAS DE CLIENTES
+         ============================================================ -->
+    <section id="resenas" class="section" aria-labelledby="resenas-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <h2 id="resenas-title" class="section-title">Lo que dicen<br>los clientes</h2>
+          <p class="section-subtitle">Reseñas verificadas de Google de quienes confiaron su defensa al Dr. Blanes.</p>
+        </header>
+
+        <div class="reviews-layout">
+
+          <!-- Puntuación agregada + link a Google -->
+          <div class="rating-block reveal">
+            <p class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="rating-score">
+              <!-- PLACEHOLDER: reemplazar [N] con la puntuación real -->
+              [N]<span class="rating-out">&thinsp;/ 5</span>
+            </p>
+            <p class="rating-count">
+              <!-- PLACEHOLDER: reemplazar [N] con el total real -->
+              [N] rese&ntilde;as en Google
+            </p>
+            <a
+              href="https://www.google.com/search?q=Dr.+Maximiliano+Blanes+Abogado+Penalista+C%C3%B3rdoba+Opiniones"
+              class="btn btn-ghost reviews-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ver todas las reseñas en Google"
+            >
+              Ver todas &rarr;
+            </a>
+          </div>
+
+          <!-- Testimonios -->
+          <ul class="testimonials-list" aria-label="Reseñas de clientes">
+
+            <li class="testimonial reveal">
+              <blockquote class="testimonial-body">
+                <p class="testimonial-text">
+                  <!-- PLACEHOLDER: reemplazar con reseñas reales de Google -->
+                  "[Texto de la primera rese&ntilde;a de Google &mdash; copiar textualmente.]"
+                </p>
+              </blockquote>
+              <footer class="testimonial-footer">
+                <cite class="testimonial-author">[Nombre] &middot; Google</cite>
+                <span class="testimonial-stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </footer>
+            </li>
+
+            <li class="testimonial reveal">
+              <blockquote class="testimonial-body">
+                <p class="testimonial-text">
+                  "[Texto de la segunda rese&ntilde;a de Google &mdash; copiar textualmente.]"
+                </p>
+              </blockquote>
+              <footer class="testimonial-footer">
+                <cite class="testimonial-author">[Nombre] &middot; Google</cite>
+                <span class="testimonial-stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </footer>
+            </li>
+
+            <li class="testimonial reveal">
+              <blockquote class="testimonial-body">
+                <p class="testimonial-text">
+                  "[Texto de la tercera rese&ntilde;a de Google &mdash; copiar textualmente.]"
+                </p>
+              </blockquote>
+              <footer class="testimonial-footer">
+                <cite class="testimonial-author">[Nombre] &middot; Google</cite>
+                <span class="testimonial-stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </footer>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO — mapa + formulario
+         ============================================================ -->
+    <section id="contacto" class="section section-alt" aria-labelledby="contacto-title">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 id="contacto-title" class="section-title">Contanos tu&nbsp;situación</h2>
+          <p class="section-subtitle">
+            Atención reservada y directa. Toda consulta se trata de manera estrictamente confidencial.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+
+          <!-- Columna izquierda: mapa + datos -->
+          <div class="contact-left">
+
+            <!-- Mapa embebido -->
+            <div class="map-wrap">
+              <!--
+                MAPA: Google Maps embed sin API key.
+                Si querés usar una API key, reemplazá el src por:
+                https://www.google.com/maps/embed/v1/place?key=TU_KEY&q=Caseros+251,Córdoba,Argentina
+              -->
+              <iframe
+                class="map-iframe"
+                src="https://maps.google.com/maps?q=Caseros+251%2C+C%C3%B3rdoba%2C+Argentina&output=embed&z=16"
+                title="Ubicación: Caseros 251, 2°A, Córdoba"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Mapa de ubicación del consultorio del Dr. Blanes"
+              ></iframe>
+            </div>
+
+            <!-- CTA WhatsApp (columna izquierda, bajo el mapa) -->
+            <a
+              href="https://wa.me/5493512680342?text=Hola%20Dr.%20Blanes%2C%20quisiera%20hacer%20una%20consulta"
+              class="btn btn-primary btn-large btn-full"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Escribir al Dr. Blanes por WhatsApp"
+            >
+              Escribir por WhatsApp
+            </a>
+
+            <!-- Datos de contacto -->
+            <ul class="contact-data" aria-label="Datos de contacto">
+              <li class="contact-data-item">
+                <span class="data-label">Teléfono</span>
+                <a href="tel:+5493512680342" class="data-value">+54 9 351 268 0342</a>
+              </li>
+              <li class="contact-data-item">
+                <span class="data-label">Dirección</span>
+                <span class="data-value">Caseros 251, 2°A, Córdoba</span>
+              </li>
+              <li class="contact-data-item">
+                <span class="data-label">Matrícula</span>
+                <span class="data-value">MP.1-45107</span>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Columna derecha: formulario -->
+          <div class="contact-right">
+            <p class="form-intro">
+              O dejá tus datos y nos ponemos en contacto con vos.
+            </p>
+
+            <!--
+              FORMULARIO SIN BACKEND — opciones para conectarlo:
+
+              1. Cloudflare Pages Functions:
+                 Crear /functions/contact.js, cambiar action="/contact" method="POST"
+
+              2. Formspree (sin código):
+                 action="https://formspree.io/f/TU_ID" method="POST"
+
+              3. EmailJS (client-side):
+                 Agregar su SDK y usar emailjs.sendForm(...)
+
+              El CTA principal es WhatsApp; este formulario es complementario.
+            -->
+            <form
+              id="contact-form"
+              class="contact-form"
+              novalidate
+              aria-label="Formulario de consulta"
+            >
+              <!-- Nombre + teléfono en fila -->
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="nombre" class="form-label">
+                    Nombre <span class="req" aria-label="obligatorio">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    class="form-input"
+                    placeholder="Nombre y apellido"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                  >
+                </div>
+                <div class="form-field">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    class="form-input"
+                    placeholder="351 000 0000"
+                    autocomplete="tel"
+                    aria-describedby="tel-hint"
+                  >
+                  <span id="tel-hint" class="form-hint">Con código de área, sin el 0</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="situacion" class="form-label">
+                  Contanos tu situación <span class="req" aria-label="obligatorio">*</span>
+                </label>
+                <textarea
+                  id="situacion"
+                  name="situacion"
+                  class="form-input form-textarea"
+                  rows="5"
+                  placeholder="Describí brevemente tu situación. Toda la información que compartís es confidencial."
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-large btn-full"
+                id="submit-btn"
+              >
+                Enviar consulta
+              </button>
+
+              <p id="form-success" class="form-success" aria-live="polite" hidden>
+                Tu mensaje fue recibido. Nos ponemos en contacto a la brevedad.
+              </p>
+
+              <p class="form-disclaimer">
+                La información que compartís es estrictamente confidencial y se utiliza únicamente para atender tu consulta.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <p class="footer-name">Dr. Maximiliano Blanes</p>
+        <p class="footer-role">Abogado penalista</p>
+      </div>
+
+      <div class="footer-data">
+        <p>Matrícula MP.1-45107</p>
+        <p>Caseros 251, 2°A, Córdoba, Argentina</p>
+        <p><a href="tel:+5493512680342" class="footer-link">+54 9 351 268 0342</a></p>
+      </div>
+
+      <div class="footer-cta">
+        <a
+          href="https://wa.me/5493512680342?text=Hola%20Dr.%20Blanes%2C%20quisiera%20hacer%20una%20consulta"
+          class="footer-wa"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Consulta por WhatsApp"
+        >
+          WhatsApp &rarr;
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-legal">
+          &copy; 2025 Dr. Maximiliano Blanes. Abogado penalista matriculado MP.1-45107.
+          Colegio de Abogados de Córdoba. Argentina.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       ============================================================ -->
+  <a
+    href="https://wa.me/5493512680342?text=Hola%20Dr.%20Blanes%2C%20quisiera%20hacer%20una%20consulta"
+    class="wa-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Consulta confidencial por WhatsApp"
+    title="WhatsApp"
+  >
+    <svg class="wa-fab-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-fab-label">WhatsApp</span>
+  </a>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
