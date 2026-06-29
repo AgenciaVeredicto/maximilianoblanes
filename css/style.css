@@ -107,6 +107,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   height: 100%;
   gap: 2rem;
+  padding-inline: clamp(1rem, 2.5vw, 1.5rem);
+  max-width: none;
 }
 
 .nav-brand {
@@ -169,6 +171,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav-cta { flex-shrink: 0; }
+
+.nav-cta-wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
 
 /* Toggle (hamburguesa) — visible solo en mobile */
 .nav-toggle {
@@ -360,7 +380,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-display);
   font-size: clamp(2.25rem, 7vw, 5rem);
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.08;
   letter-spacing: -0.02em;
   color: var(--cream);
