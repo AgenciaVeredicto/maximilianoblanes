@@ -124,6 +124,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .nav-brand:hover { color: var(--accent); }
 }
 
+.nav-brand-sub {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -678,8 +686,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 100%;
   border: none;
   display: block;
-  /* Desaturado y oscuro para integrarse con la paleta navy */
-  filter: grayscale(80%) brightness(0.52) contrast(1.1);
 }
 
 /* Datos de contacto */
@@ -1007,6 +1013,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   /* Stagger en testimonios */
   .testimonials-list .testimonial:nth-child(2) { transition-delay:  80ms; }
   .testimonials-list .testimonial:nth-child(3) { transition-delay: 160ms; }
+  .testimonials-list .testimonial:nth-child(4) { transition-delay: 230ms; }
+  .testimonials-list .testimonial:nth-child(5) { transition-delay: 290ms; }
 
   /* Entrada del FAB desde abajo */
   .wa-fab {
