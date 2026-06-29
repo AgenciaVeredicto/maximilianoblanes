@@ -76,7 +76,7 @@
   );
 
   document.querySelectorAll(
-    '.area-card, .reason-item, .contact-data-item, .section-header, .doctor-bio, .doctor-photo-col, .testimonial, .rating-block'
+    '.area-item, .reason-item, .contact-data-item, .section-header, .doctor-bio, .doctor-photo-col, .testimonial, .rating-block'
   ).forEach(function (el) {
     el.classList.add('reveal');
     observer.observe(el);
