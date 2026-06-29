@@ -374,6 +374,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ============================================================ */
 .section { padding-block: var(--section-v); }
 
+/* Sección en crema — rompe la banda azul */
+.section-cream {
+  background-color: var(--cream);
+}
+.section-cream .section-title  { color: var(--navy); }
+.section-cream .section-subtitle { color: rgba(14, 26, 43, 0.6); }
+.section-cream .reason-title   { color: var(--navy); }
+.section-cream .reason-desc    { color: rgba(14, 26, 43, 0.65); }
+.section-cream .reason-num     { color: rgba(14, 26, 43, 0.18); }
+
 .section-alt {
   background-color: #101C2A;   /* era var(--subtle)=#27374A — sin bloques azules pesados */
   border-top:    1px solid rgba(228, 217, 195, 0.07);
