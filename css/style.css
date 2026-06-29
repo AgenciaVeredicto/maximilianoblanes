@@ -863,7 +863,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (min-width: 600px) {
   .footer-inner {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr;
     align-items: start;
     gap: 2rem 4rem;
   }
@@ -1166,4 +1166,98 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--accent);
   letter-spacing: 0.04em;
   flex-shrink: 0;
+}
+
+
+/* ============================================================
+   OPTIMIZACIONES MOBILE
+   ============================================================ */
+
+/* Ocultar subtítulo del nav en mobile (espacio limitado) */
+@media (max-width: 720px) {
+  .nav-brand-sub { display: none; }
+}
+
+/* Hero: posición de imagen más centrada en portrait mobile */
+@media (max-width: 600px) {
+  .hero {
+    background-position: 65% 30%;
+  }
+}
+
+/* Ajustes en pantallas ≤ 480px */
+@media (max-width: 480px) {
+
+  /* Hero: CTA ancho completo */
+  .hero-content .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero: eyebrow un poco más pequeño */
+  .hero-eyebrow {
+    font-size: 0.5625rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* Doctor: foto menos alta en portrait mobile */
+  .doctor-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Bio-creds: envolver si hay poco espacio */
+  .bio-creds {
+    flex-wrap: wrap;
+    gap: 1.25rem 2rem;
+  }
+
+  /* Áreas: ícono ligeramente más pequeño */
+  .area-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Razones: reducir padding-top del borde */
+  .reason-item {
+    padding-top: 1.25rem;
+  }
+
+  /* Mapa: proporción cuadrada para mayor altura en mobile */
+  .map-wrapper {
+    padding-top: 75%;
+  }
+
+  /* Testimonios: padding vertical más compacto */
+  .testimonial {
+    padding-block: 1.375rem;
+  }
+
+  /* Rating block: disposición horizontal en mobile */
+  .rating-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+  }
+  .rating-count { margin-bottom: 0; }
+  .rating-score { font-size: 2rem; }
+
+  /* Footer: centrar en mobile */
+  .footer-brand,
+  .footer-data {
+    text-align: left;
+  }
+
+  /* Botón FAB: asegurar visibilidad sobre el formulario */
+  .wa-fab { bottom: 1.25rem; right: 1rem; }
+}
+
+/* Pantallas muy pequeñas ≤ 360px */
+@media (max-width: 360px) {
+  .hero-headline {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
 }
